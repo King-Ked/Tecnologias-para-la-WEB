@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<curriculum>
+    <encabezado-curriculum>
+        <leyenda>
+            <img>
+            </img>
+            <nombre-y-apellido formato="texto">
+            </nombre-y-apellido>
+            <puesto-buscado formato="texto">
+            </puesto-buscado>
+        </leyenda>
+        <leyenda>
+            <img>
+            </img>
+            <direccion formato="texto">
+            </direccion>
+            <img>
+            </img>
+            <correo formato="texto">
+            </correo>
+            <img>
+            </img>
+            <telefono formato="texto">
+            </telefono>
+        </leyenda>
+    </encabezado-curriculum>
+    <br/>
+    <cuerpo-pagare>
+        <leyenda>
+            Debo(emos) y pagare(mos) incondicionalmente por este pagare a la orden de
+            <nombre-acreedor formato="texto">
+            </nombre-acreedor>
+            en
+            <lugar-de-pago formato="texto">
+            </lugar-de-pago>
+            el
+            <fecha-pago dia="numero-entero" mes="texto" anio="numero-entero">
+            </fecha-pago>
+            <br/>
+            La cantidad de:
+            <cantidad-letra formato="caracter">
+            </cantidad-letra>
+            Valor recibido a mi (nuestra) entera satisfaccion. Este pagare forma parte de
+            una serie numerada del 1 al 
+            <num-serie formato="numero-entero">
+            </num-serie>
+            y todos estan sujetos a la condicion de que al no pagarse cualquiera de ellos 
+            a su vencimiento, seran exigibles todos los que sigan en numero, ademas de los 
+            ya vencidos, desde la fecha de vencimiento de este documento hasta el dia de su 
+            liquidacion causara intereses moratorios al tipo de 
+            <numero formato="numero-entero">
+            </numero>
+            % mensual, pagadero en este ciudad justamente con el principal.
+        </leyenda>
+    </cuerpo-pagare>
+</curriculum>
+        

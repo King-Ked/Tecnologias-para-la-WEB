@@ -1,0 +1,26 @@
+<carta-poder>
+	<encabezado>
+		<titulo-documento>CARTA PODER</titulo-documento>
+		<fecha></fecha>
+	</encabezado>
+	<cuerpo-documento>
+		<nombre-destinatario>Sr.</nombre-destinatario>
+		<otorgamiento>Por la presente</otorgamiento>
+		<nombre-apoderado>al Sr.</nombre-apoderado>
+		<leyenda>poder amplio, cumplido y bastante para que a</leyenda>
+		<motivo></motivo>
+		<leyenda>nombre y representación.</leyenda>
+		<descripcion></descripcion>		
+		<leyenda>
+			y así mismo para que conteste las demandas y recomentaciones que se entablan en mi contra <br/>
+			o ponga excepciones dilatorias y perentorias, rinda toda clase de pruebas, reconozca firmas, y <br/>
+			documentos, redarguya de falsos a los que se presenten por la contraria, presente testigos, ves <br/>
+			protestar a los de la contraria y los represente y tache, articule y absuelva posiciones, recurse...
+		</leyenda>
+		<firma-apoderado>ACEPTO EL PODER</firma-apoderado>
+		<firma-otorgante>OTORGANTE</firma-otorgante>
+		<firma-testigouno>TESTIGO</firma-testigouno>
+		<firma-testigodos>TESTIGO</firma-testigodos>
+	</cuerpo-documento>
+
+</carta-poder>

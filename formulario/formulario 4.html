@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+	<head>
+		<title>Formulario 4</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="Hern&aacute;ndez Trejo Enrique Alberto">
+		<meta name="description" content="todos los elementos de formulario">
+  		<meta name="keywords" content="HTML, form">
+		<meta name="copyright" content="Enrique Hdz">
+	</head>
+
+    <body>
+        <form action="algo.php" method="get" name="formulario4" onfocus></form>
+            <fieldset>
+                <legend>Primer Formulario</legend><br>
+                Elemento Texto:
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br><br>
+                Elemento Correo Electronico:
+                <input type="email" name="correo" id="correo"><br><br>
+                Elemento Number:                    
+                <input type="number" name="numero" id="numero" min="0" max="30" step="2"><br><br>
+                Elemento de Seleccion Multiple:
+                <select name="materias_cursadas" id="materias_cursadas" size="5" multiple>
+                    <option value="mate_discretas">Matematicas Discretas</option>
+                    <option value="Tec_Web">Tecnologias para la Web</option>
+                    <option value="IA">Inteligencia Artificial</option>	
+                    <option value="Fisica">Fisica</option>
+                    <option value="Calculo">Calculo</option>
+                    <option value="ADOO">Analisis y Diseño Orientado a Objetos</option>
+                    <option value="Ing_de_software">Ingenieria de Software</option>
+                    <option value="Prob_y_Estad">Probabilidad y Estadisticas</option>	
+                    <option value="DSD">Diseños de Sistemas Digitales</option>
+                    <option value="Instrumentacion">Instrumentacion</option>
+                </select>
+                <br><br>
+                Elemento de seleccion simple:
+                <select name="estatus" id="estatus">
+                    <option value="regular">Regular</option>
+                    <option value="irregular_s">Irregular sin dictamen</option>
+                    <option value="irregular_c">Irregular con dictamen</option>
+                </select>
+                <br><br>
+                Elemento de Hideen:
+                <label for="hidden1">Palabra Clave:</label>
+                    <input type="text" name="palabra_clave" id="palabra_clave">
+                    <input type="hidden" name="hidden1" id="hidden1" value="3487"><br><br>
+                Elemento de Busqueda:
+                <input type="search" name="busqueda" id="busqueda"><br><br>
+                Elemento de color:
+                <input type="color" name="color" id="color"><br><br>                    
+                Elemento de archivo:
+                <input type="file" name="archivo" id="archivo"><br><br>
+                Elemento de imagen:
+                <input type="image" src="img.gif" alt="robot" width="100" height="100" style="float: right;"><br><br>
+                Elemento de Rango:
+                <input type="range" name="rango" id="rango" min="0" max="50" step="5"><br><br>
+                Elemento de telefono:
+                <input type="tel" name="telefono" id="telefono" maxlength="10"><br><br>
+                Elemento de month:
+                <input type="month" name="mes" id="mes"><br><br>
+                Elemento de URL:
+                <input type="url" id="SyA_traveling" value="https://syatraveling.com/">
+                <button onclick="busquedaURL()">Intenta</button>
+                <p id="SyA">syatraveling</p>
+                <script>
+                    function busquedaURL(){
+                        var x = document.getElementById("SyA_traveling").value;
+                        document.getElementById("SyA").innerHTML = x;
+                    }
+                </script>
+                Elemento de reset:
+                <input type="reset" id="limpiar" name="limpiar" value="limpiar"><br><br>
+                Elemento de submit:
+                <input type="submit" id="enviar" name="enviar" value="enviar">
+            </fieldset>
+        </form>
+    </body>
+
+</html>

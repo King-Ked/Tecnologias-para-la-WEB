@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<formato-pagare>
+    <encabezado-pagare>
+        <leyenda>
+            Pagaré
+        </leyenda>
+        <num-folio formato="numero-entero">
+        </num-folio>
+        <leyenda>
+            Bueno por $
+            <cantidad-numero formato="numero-enterp">
+            </cantidad-numero>
+        </leyenda>
+        <br/>
+        <leyenda>
+            En
+            <lugar-expedicion formato="texto">
+            </lugar-expedicion>
+            a
+            <fecha-expedicion dia="numero-entero" mes="texto" anio="numero-entero">
+            </fecha-expedicion>
+        </leyenda>
+    </encabezado-pagare>
+    <br/>
+    <cuerpo-pagare>
+        <leyenda>
+            Debo(emos) y pagare(mos) incondicionalmente por este pagare a la orden de
+            <nombre-acreedor formato="texto">
+            </nombre-acreedor>
+            en
+            <lugar-de-pago formato="texto">
+            </lugar-de-pago>
+            el
+            <fecha-pago dia="numero-entero" mes="texto" anio="numero-entero">
+            </fecha-pago>
+            <br/>
+            La cantidad de:
+            <cantidad-letra formato="caracter">
+            </cantidad-letra>
+            Valor recibido a mi (nuestra) entera satisfaccion. Este pagare forma parte de
+            una serie numerada del 1 al 
+            <num-serie formato="numero-entero">
+            </num-serie>
+            y todos estan sujetos a la condicion de que al no pagarse cualquiera de ellos 
+            a su vencimiento, seran exigibles todos los que sigan en numero, ademas de los 
+            ya vencidos, desde la fecha de vencimiento de este documento hasta el dia de su 
+            liquidacion causara intereses moratorios al tipo de 
+            <numero formato="numero-entero">
+            </numero>
+            % mensual, pagadero en este ciudad justamente con el principal.
+        </leyenda>
+    </cuerpo-pagare>
+    <br/>
+    <pie-pagare>
+        <datos-del-deudor>
+            <nombre-deudor calle ="texto" colonia="texto" numero-casa="numero-entero">
+            </nombre-deudor>
+            <dirrecion-del-deudor formato="texto">
+            </dirrecion-del-deudor>
+            <telefono formato="numero-telefono">
+            </telefono>
+            <poblacion formato="texto">
+            </poblacion>
+        </datos-del-deudor>
+        <br/>
+        <leyenda>
+            Acepto(amos)
+        </leyenda>
+        <leyenda>
+            Firma(s)
+            <img></img>
+        </leyenda>
+    </pie-pagare>
+</formato-pagare>
+        

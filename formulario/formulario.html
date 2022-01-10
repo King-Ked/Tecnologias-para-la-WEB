@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+        <meta name="Descripcion" content="Formulario 1 curriculum" />
+        <meta name="Autor" content="Hern&aacute;ndez Trejo Enrique Alberto" />
+        <meta name="Keywords" content="HTML, form" />
+        <meta name="Copyright" content="Enrique Hdz">
+        <title>Formulario 1</title>
+    </head>
+
+    <body>
+            <form action="mailto:t.rex.o.work@gmail.com" method="GET" name="Formulario 1">
+                <fieldset>
+                        <legend>Datos Personales</legend>
+                Nombre: <input type="text" id="Nombre" name="Nombre"><br>
+                    Apellido Paterno: <input type="text" id="a_paterno" name="a_paterno"><br>
+                    Apelllido Materno: <input type="text" id="a_materno" name="a_materno"><br>
+                    Correo electronico: <input type="email" id="correo" name="correo"><br>
+                    Edad: <input type="number" id="edad" name="edad"><br>
+                    Cumpleaños: <input type="date" id="cumple" name="cumple"><br>
+                    Genero: <input type="radio" id="genero_m" name="genero" value="Mujer">Mujer
+                    <input type="radio" id="genero_h" name="genero" value="Hombre">Hombre<br>
+                </fieldset>
+                <fieldset>
+                        <legend>Datos Academicos</legend>
+                        Escuela: <input type="text" id="escuela" name="escuela"><br>
+                            Semestre: <input type="text" id="semestre" name="semestre"><br>
+                            Materias Cursadas: 
+                            <select name="materias_curs" id="mat_curs" multiple>
+                                    <option value="Mate_discretas">Matematicas Discretas</option>
+                                    <option value="Tec_web">Tecnologias para la WEB</option>
+                                    <option value="IA">Inteligencia Artificial</option>
+                                    <option value="Fisica">Fisica</option>
+                                    <option value="Calculo">Calculo</option>
+                            </select><br>
+                            Correo Electronico Institucional: <input type="email" id="correo_i" name="correo_i"><br>
+                            Fecha de Ingreso: <input type="date" id="Ingreso" name="Ingreso"><br>
+                            Estatus Academico: <select name="estatus" id="estatus">
+                                    <option value="Regular">Regular</option>
+                                    <option value="Irregular_s">Irregular sin dictamen</option>
+                                    <option value="Irregular_c">Irregular con Dictamen</option>
+                            </select>
+                </fieldset>
+                    <input type="submit" id="enviar" name="enviar" value="Enviar"><br>
+                    <input type="reset" id="limpiar" name="limpiar" value="Limpiar"><br>
+            </form>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+        <meta name="Descripcion" content="Formulario con tabla" />
+        <meta name="Autor" content="Hern&aacute;ndez Trejo Enrique Alberto" />
+        <meta name="Keywords" content="HTML, form, table" />
+        <meta name="Copyright" content="Enrique Hdz">
+        <title>Ejercicio 1 Formulario con Tabla</title>
+    </head>
+
+    <body style="background-color: bisque;">
+        <table border="1" style="width: 100%; background-color: aquamarine;">
+            <h1 style="text-align: center;">Formulario ¿Como te sientes?</h1>
+            <form name="Formulario" action="mailto:hdz_enrique@outlook.com"
+            subject="Prueba" method="POST" enctype="text/plain" autocomplete="on">
+                <tr>
+                    <td>Nombre:</td>
+                    <td><input type="text" name="nombre" id="nombre" autofocus style="width: 97.5%;"></td>
+                    <td>Contraseña:</td>
+                    <td><input type="password" name="contraseña" id="contraseña" autofocus style="width: 97.5%;"></td>
+                </tr>
+                <tr>
+                    <td>Describete:</td>
+                    <td colspan="3"><textarea style="width: 99.5%;"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Estoy: <br>
+                        <input type="checkbox" name="respuesta" value="enojada"> Enojada <br>
+                        <input type="checkbox" name="respuesta" value="contenta"> Contenta <br>
+                        <input type="checkbox" name="respuesta" value="triste"> Triste <br>
+                        <input type="checkbox" name="respuesta" value="deprimida"> Deprimida <br>
+                    </td>
+                    <td> Me Gustaria: <br>
+                        <input type="radio" name="respuesta" value="bien"> Estar bien <br>
+                        <input type="radio" name="respuesta" value="sonreir"> Sonreir <br>
+                        <input type="radio" name="respuesta" value="tranquila"> Estar tranquila <br>
+                        <input type="radio" name="respuesta" value="nose"> No lo se <br>
+                    </td>
+                    <td style="text-align: center;">Seleccion Simple: <br><br>
+                            <select name="respuesta" style="width: 100%;">
+                                <option value="1" style="text-align: center;">Opcion 1</option>
+                                <option value="2" style="text-align: center;">Opcion 2</option>
+                                <option value="3" style="text-align: center;">Opcion 3</option>
+                            </select>
+                    </td>
+                    <td style="text-align: center;">Seleccion Multiple: <br><br>
+                        <select name="respuesta1" size="3" multiple style="width: 100%;">
+                            <option value="1" style="text-align: center;">Opcion 1</option>
+                            <option value="2" style="text-align: center;">Opcion 2</option>
+                            <option value="3" style="text-align: center;">Opcion 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <center>
+                    <input type="submit" value="Enviar" name="aceptar">
+                    <input type="reset" value="Limpiar" name="limpiar">
+                    <input type="button" value="Calcular" name="calcula">
+                </center><br>
+            </form>
+        </table>
+        
+    </body>
+
+</html>

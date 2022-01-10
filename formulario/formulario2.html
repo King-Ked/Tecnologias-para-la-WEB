@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+        <meta name="Descripcion" content="Formulario 2" />
+        <meta name="Autor" content="Hern&aacute;ndez Trejo Enrique Alberto" />
+        <meta name="Keywords" content="HTML, form" />
+        <meta name="Copyright" content="Enrique Hdz">
+        <title>Formulario 2</title>
+    </head>
+
+    <body>
+        <form action="_blank" method="GET" name="Formulario 2" autocomplete="on">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                Nombre: <input type="text" id="Nombre" name="Nombre" required placeholder="Escribe tu nombre sin acento"><br>
+                Apellido Paterno: <input type="text" id="a_paterno" name="a_paterno" required><br>
+                Apelllido Materno: <input type="text" id="a_materno" name="a_materno" required><br>
+                Correo electronico: <input type="email" id="correo" name="correo" required><br>
+                Direccion 1: <textarea id="dir1" name="dir1" rows="10" cols="10"></textarea><br>
+                Direccion 2: <textarea id="dir2" name="dir2" style="width: 200px; height: 200px;" placeholder="Escribe toda tu direccion sin abreviaturas"></textarea><br>
+                Edad: <input type="number" id="edad" name="edad"><br>
+                Cumpleaños: <input type="date" id="cumple" name="cumple"><br>
+                Genero: <input type="radio" id="genero_m" name="genero" value="Mujer">Mujer
+                <input type="radio" id="genero_h" name="genero" value="Hombre">Hombre<br>
+            </fieldset>
+            <br>
+            <fieldset>
+                    <legend>Datos Academicos</legend>
+                    Escuela: <input type="text" id="escuela" name="escuela"><br>
+                    Semestre: <input type="text" id="semestre" name="semestre"><br>
+                    Materias Cursadas: 
+                    <select name="materias_curs" id="mat_curs" multiple>
+                        <option value="Mate_discretas">Matematicas Discretas</option>
+                        <option value="Tec_web">Tecnologias para la WEB</option>
+                        <option value="IA">Inteligencia Artificial</option>
+                        <option value="Fisica">Fisica</option>
+                        <option value="Calculo">Calculo</option>
+                    </select><br>
+                    Correo Electronico Institucional: <input type="email" id="correo_i" name="correo_i"><br>                        Fecha de Ingreso: <input type="date" id="Ingreso" name="Ingreso"><br>
+                    Estatus Academico: <select name="estatus" id="estatus">
+                        <option value="Regular">Regular</option>
+                        <option value="Irregular_s">Irregular sin dictamen</option>
+                        <option value="Irregular_c">Irregular con Dictamen</option>
+                    </select>
+            </fieldset>
+            <br>
+                Escribe el navegador de tu preferencia: <input list="navegadores">
+                <datalist id="navegadores">
+                    <option value="Chrome">
+                    <option value="Edge">
+                    <option value="Opera">
+                    <option value="Safari">
+                    <option value="Explorer">
+                </datalist>
+            <br>
+            Motos<select name="motos" id="motos">
+                <optgroup label="Motocicletas">
+                    <option value="CBR_250CC">Moto CBR_250CC</option>
+                    <option value="Suzuki_650CC_DP">Moto Suzuki 650CC Doble Proposito</option>
+                    <option value="Yamaha_s3_300CC">Yamaha s3 300CC</option>
+                    <option value="Vatrom_650cc_DP">Vatrom 650cc DP</option>
+                </optgroup>
+            </select>
+                <input type="submit" id="enviar" name="enviar" value="Enviar"><br>
+                <br>
+                <input type="reset" id="limpiar" name="limpiar" value="Limpiar"><br>
+                <button type="button" id="boton" name="boton" value="Clickeale aqui" onclick="alert('Hola Profa')">Click</button>
+        </form>
+    </body>
+    
+</html>

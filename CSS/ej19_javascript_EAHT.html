@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Descripcion" content="Ejemplo de uso de Function, If, Onblur, alert" />
+    <meta name="Autor" content="Hern&aacute;ndez Trejo Enrique Alberto" />
+    <meta name="Keywords" content="HTML, JS, Function, If, Onblur, alert" />
+    <meta name="Copyright" content="Enrique Hdz">
+    <title>Function, If, Onblur, alert</title>
+    <script language="JavaScript">
+      function ComprobarEdad(Objeto) 
+      {
+          if (isNaN(Objeto.value)) 
+          {
+              alert("Introduzca una edad correcta")
+              Objeto.value = ""
+              Objeto.focus()
+          } 
+      }
+    </script>
+    <style>
+        *{
+            background-color: #C3B1E1;
+            text-align: center;
+            margin-top: 135px;
+        }
+        input{
+            background-color:azure;
+            border-radius: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <form>
+        Nombre: <input type="text" name="Nombre" onblur='if(Nombre.value=="")alert("Debe rellenar el campo Nombre")'> 
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        Edad:</h3> <input type="text" name="Edad" onblur="ComprobarEdad(this)">
+    </form>
+  </body>
+</html>

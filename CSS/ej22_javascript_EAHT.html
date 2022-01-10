@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Descripcion" content="Validacion de usuario y contraseña con JS" />
+    <meta name="Autor" content="Hern&aacute;ndez Trejo Enrique Alberto" />
+    <meta name="Keywords" content="HTML, JS, Validacion" />
+    <meta name="Copyright" content="Enrique Hdz">
+    <title>Validacion de Cliente</title>
+    <script language="JavaScript">
+      function ValidarClave() 
+      {
+        with(document.formulario)
+        if (Usuario.value == "") 
+        {
+          alert("Nombre de usuario")
+          Usuario.focus()
+        } else 
+        {
+          if ((Usuario.value == "Enrique") && (Clave.value == "123456789")) 
+          {
+            alert("Acceso permitido")
+          } 
+          else 
+          {
+            alert("Acceso denegado")
+          }
+        }
+      }
+    </script>
+    <style>
+      *{
+          background-color: #C3B1E1;
+          text-align: center;
+          margin-top: 135px;
+      }
+      input{
+          background-color:azure;
+          border-radius: 10px;
+      }
+  </style>
+  </head>
+  <body>
+    <form name="formulario"> 
+      Nombre: <input type="text" name="Usuario">
+      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+      Clave: <input type="text" name="Clave" onblur="ValidarClave()">
+    </form>
+  </body>
+</html>

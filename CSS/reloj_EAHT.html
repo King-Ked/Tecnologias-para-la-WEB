@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reloj</title>
+
+    <script>
+        function hora()
+        {
+            var time = new Date();
+            var hours = time.getHours().toString();
+            var minutes = time.getMinutes().toString();
+            if (minutes.length == 1) 
+                minutes = "0" + minutes;
+            var second = time.getSeconds().toString();
+            if (second.length == 1) 
+                second = "0" + second;
+            document.forms[0].mireloj.value = hours + ":" + minutes + ":" + second;
+        }
+    </script>
+  </head>
+
+  <body>
+    <form">
+    <p align="center">
+        <input type="text" name="mireloj" size="10">
+    </p>
+    </form>
+    <script>
+        var r = setInterval("Hora()", 500)
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+        <meta name="Descripcion" content="Formulario 5 URL" />
+        <meta name="Autor" content="Hern&aacute;ndez Trejo Enrique Alberto" />
+        <meta name="Keywords" content="HTML, form, URL, Script" />
+        <meta name="Copyright" content="Enrique Hdz">
+        <title>Formulario 5 elemento URL</title>
+    </head>
+
+    <body>
+            <form action="https://syatraveling.com/" method="GET" name="Formulario5">
+                Elemento de URL: <input type="url" id="SyA_traveling" value="https://syatraveling.com/">
+                <button onclick="busquedaURL()">Intenta</button>
+                <p id="SyA_Traveling"></p>
+                <script>
+                    function busquedaURL(){
+                        var x = document.getElementById("SyA_traveling").value;
+                        document.getElementById("SyA_traveling").innerHTML = x;
+                    }
+                </script>
+            </form>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Descripcion" content="Ejemplo de uso de onblur y caja de text con JS" />
+    <meta name="Autor" content="Hern&aacute;ndez Trejo Enrique Alberto" />
+    <meta name="Keywords" content="HTML, JS, onblur, text box" />
+    <meta name="Copyright" content="Enrique Hdz">
+    <title>Onblur y caja de Texto con JS</title>
+    <style>
+        *{
+            background-color: #C3B1E1;
+            text-align: center;
+            margin-top: 135px;
+        }
+        input{
+            background-color:azure;
+            border-radius: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <form>
+        Nombre: <input type="text" onblur='if(this.value=="")alert("Debe rellenar el campo Nombre")'>
+    </form>
+  </body>
+</html>
